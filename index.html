@@ -3,16 +3,50 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Регистрация</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Консалтинговая компания</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f2f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #004aad;
+      color: #fff;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #contact{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .container {
@@ -80,69 +114,182 @@
     .login-link a:hover {
       text-decoration: underline;
     }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      color: #fff;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .btn {
+      background: #ff6f61;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #e65550;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 50px;
+      color: #004aad;
+    }
+
+    .about,
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .about p,
+    .service {
+      flex: 1 1 300px;
+      padding: 20px;
+      background: #f5f5f5;
+      border-radius: 10px;
+    }
+
+    .service h3 {
+      margin-bottom: 15px;
+      color: #004aad;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 40px 10%;
+    }
+
+    footer a {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+
+    @media(max-width: 768px) {
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h2>Регистрация</h2>
-    <form id="regForm">
-      <label for=" name">Имя</label>
-      <input type="text" id="name" name="name" required>
+  <header>
+    <h1>КонсалтингПро</h1>
+    <nav>
+      <a href="#about">О нас</a>
+      <a href="#services">Услуги</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+  <section class="hero">
+    <h2>Решения для вашего бизнеса</h2>
+    <p>Мы помогаем компаниям достигать успеха через стратегическое консультирование и инновационные подходы.</p>
+    <button class="btn">Связаться с нами</button>
+  </section>
 
-      <label for="password">Пароль</label>
-      <input type="password" id="password" name="password" required>
-
-      <label for="confirm-password">Подтвердите пароль</label>
-      <input type="password" id="confirm-password" name="confirm-password" required>
-
-      <button type="submit">Зарегистрироваться</button>
-    </form>
-    <div class="login-link">
-      Уже есть аккаунт? <a href="#">Войти</a>
+  <section id="about">
+    <h2>О нас</h2>
+    <div class="about">
+      <p>КонсалтингПро — ведущая консалтинговая компания с более чем 10-летним опытом. Мы предоставляем профессиональные
+        решения для малого и среднего бизнеса, помогая оптимизировать процессы, увеличить прибыль и достигнуть
+        стратегических целей.</p>
+      <p>Наша команда экспертов работает с клиентами по всему миру, предлагая индивидуальный подход, современные
+        инструменты анализа и проверенные методики, которые гарантируют успех и рост компании.</p>
     </div>
-  </div>
+  </section>
 
+  <section id="services">
+    <h2>Наши услуги</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Бизнес-стратегия</h3>
+        <p>Разработка эффективной стратегии для достижения ваших долгосрочных целей и роста компании.</p>
+      </div>
+      <div class="service">
+        <h3>Финансовый консалтинг</h3>
+        <p>Оптимизация бюджета, управление рисками и улучшение финансовой устойчивости вашего бизнеса.</p>
+      </div>
+      <div class="service">
+        <h3>Маркетинговые решения</h3>
+        <p>Создание маркетинговых кампаний и стратегий для увеличения продаж и привлечения клиентов.</p>
+      </div>
+    </div>
+  </section>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("regForm").addEventListener("submit", function (e) {
-        e.preventDefault();
+  <section id="contact">
 
-        let password = document.getElementById("password").value;
-        let confirmPassword = document.getElementById("confirm-password").value;
+    <div class="container">
+      <h2>Регистрация</h2>
+      <form id="regForm">
+        <label for=" name">Имя</label>
+        <input type="text" id="name" name="name" required>
 
-        if (password !== confirmPassword) {
-          alert("Пароли не совпадают!");
-          return;
-        }
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-        let data = {
-          name: document.getElementById("name").value,
-          email: document.getElementById("email").value,
-          password: password
-        };
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" required>
 
-        fetch("https://script.google.com/macros/s/AKfycbxiD_U7NtyBCTGiFEpSZP9634W2aMkQOEGUCKYXIuXJAoWTu4ygu8v8e26V0HCsV3s3/exec", {
-          method: "POST",
-          body: JSON.stringify(data)
-        })
-          .then(res => res.text())
-          .then(response => {
-            alert("Регистрация успешна!");
-            document.getElementById("regForm").reset();
-          })
-          .catch(err => {
-            console.error(err);
-            alert("Ошибка при отправке данных");
-          });
-      });
-    });
-  </script>
+        <label for="confirm-password">Подтвердите пароль</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
 
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+      <div class="login-link">
+        Уже есть аккаунт? <a href="#">Войти</a>
+      </div>
+    </div>
+
+    <h2>Контакты</h2>
+    <div class="about">
+      <p>Телефон: +7 (999) 123-45-67</p>
+      <p>Email: info@consultingpro.com</p>
+      <p>Адрес: г. Бишкек, ул. Примерная, 10</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 КонсалтингПро. Все права защищены. <a href="#">Политика конфиденциальности</a></p>
+  </footer>
 </body>
 
 </html>
