@@ -1,295 +1,360 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Консалтинговая компания</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      line-height: 1.6;
-      color: #333;
-    }
-
-    header {
-      background: #004aad;
-      color: #fff;
-      padding: 20px 10%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    #contact{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    header h1 {
-      font-size: 1.8rem;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      background: #fff;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      width: 350px;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-size: 14px;
-      color: #444;
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 14px;
-    }
-
-    input:focus {
-      border-color: #007bff;
-      outline: none;
-    }
-
-    button {
-      width: 100%;
-      padding: 12px;
-      background: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background: #0056b3;
-    }
-
-    .login-link {
-      text-align: center;
-      margin-top: 15px;
-      font-size: 14px;
-    }
-
-    .login-link a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    .login-link a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
-      color: #fff;
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      max-width: 600px;
-      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
-    }
-
-    .btn {
-      background: #ff6f61;
-      color: #fff;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background: #e65550;
-    }
-
-    section {
-      padding: 80px 10%;
-    }
-
-    section h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 50px;
-      color: #004aad;
-    }
-
-    .about,
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-    }
-
-    .about p,
-    .service {
-      flex: 1 1 300px;
-      padding: 20px;
-      background: #f5f5f5;
-      border-radius: 10px;
-    }
-
-    .service h3 {
-      margin-bottom: 15px;
-      color: #004aad;
-    }
-
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 40px 10%;
-    }
-
-    footer a {
-      color: #ff6f61;
-      text-decoration: none;
-    }
-
-    @media(max-width: 768px) {
-      .hero h2 {
-        font-size: 2.2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 
 <body>
   <header>
-    <h1>КонсалтингПро</h1>
-    <nav>
-      <a href="#about">О нас</a>
-      <a href="#services">Услуги</a>
-      <a href="#contact">Контакты</a>
-    </nav>
+    <div class="container">
+      <nav>
+        <div class="wrapper">
+          <div class="nav__logo">
+            <img src="ezgif-4-f50d9f25604e-removebg-preview 1.png" alt="">
+          </div>
+          <div class="nav__menu">
+            <div class="menu__item"><a class="active" href="index.html">Home</a></div>
+            <div class="menu__item"><a href="about.html">About</a></div>
+            <div class="menu__item"><a href="contact.html">Qa</a></div>
+          </div>
+          <div class="nav__button">
+            <a href="contact.html">Contact us</a>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Решения для вашего бизнеса</h2>
-    <p>Мы помогаем компаниям достигать успеха через стратегическое консультирование и инновационные подходы.</p>
-    <button class="btn">Связаться с нами</button>
-  </section>
+  <main>
+    <section class="payment">
+      <div class="container">
+        <div class="wrapper">
+          <div class="payment__info">
+            <div class="payment__title">Payment for
+              any buseniss</div>
+            <div class="payment__text">
+              <p>we bring everything that's required to build websites and apps
+                that accept payments and send payout globally</p>
+            </div>
+            <div class="payment__tel">
+              <div class="img">
+                <img src="Ellipse 6.png" alt="">
+              </div>
+              <div class="tel">
+                <a href="tel:4930901820">+49 30 901820</a>
+              </div>
+              <div class="tel__button">
+                <button>Get early access</button>
+              </div>
+            </div>
 
-  <section id="about">
-    <h2>О нас</h2>
-    <div class="about">
-      <p>КонсалтингПро — ведущая консалтинговая компания с более чем 10-летним опытом. Мы предоставляем профессиональные
-        решения для малого и среднего бизнеса, помогая оптимизировать процессы, увеличить прибыль и достигнуть
-        стратегических целей.</p>
-      <p>Наша команда экспертов работает с клиентами по всему миру, предлагая индивидуальный подход, современные
-        инструменты анализа и проверенные методики, которые гарантируют успех и рост компании.</p>
-    </div>
-  </section>
+            <div class="scroll__down">
+              <img src="down.png" alt="">
+            </div>
+          </div>
+          <div class="payment__img">
+            <img src="Group 40.png" alt="">
+          </div>
+        </div>
 
-  <section id="services">
-    <h2>Наши услуги</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Бизнес-стратегия</h3>
-        <p>Разработка эффективной стратегии для достижения ваших долгосрочных целей и роста компании.</p>
+        <div class="socials">
+          <div class="img">
+            <a href=""><img src="Group 48095343.png" alt=""></a>
+          </div>
+          <div class="img">
+            <a href=""><img src="Group 48095344.png" alt=""></a>
+          </div>
+          <div class="img">
+            <a href=""><img src="Group 48095345.png" alt=""></a>
+          </div>
+          <div class="img">
+            <a href=""> <img src="Group 48095346.png" alt=""></a>
+          </div>
+        </div>
+
+
+        <div class="payment__description">
+          <div class="descr">
+            <div class="title">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.</div>
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Lorem ultrices auctor pharetra, accumsan viverra.</div>
+            <div class="buttons">
+              <button class="white">white</button>
+              <button class="transparent">transparent</button>
+            </div>
+          </div>
+
+          <img class="chel" src="Group 62.png" alt="">
+        </div>
       </div>
-      <div class="service">
-        <h3>Финансовый консалтинг</h3>
-        <p>Оптимизация бюджета, управление рисками и улучшение финансовой устойчивости вашего бизнеса.</p>
+    </section>
+
+    <section class="command">
+      <div class="container">
+        <div class="command__title">WE ARE RECOMANDED BY 98K+ BUSENISES</div>
+
+        <div class="wrapper">
+          <div class="command__item">
+            <div class="info">
+              <div class="number">70</div>
+              <div class="info__text">ACTIVE STRATEGY
+                PARTNERSHIPS</div>
+            </div>
+            <div class="command__img">
+              <img src="mdi_strategy.svg" alt="">
+            </div>
+          </div>
+          <div class="command__item">
+            <div class="info">
+              <div class="number">95k+</div>
+              <div class="info__text">RECOMANDATION
+                AND REFERALS</div>
+            </div>
+            <div class="command__img">
+              <img src="ic_outline-recommend.png" alt="">
+            </div>
+          </div>
+          <div class="command__item">
+            <div class="info">
+              <div class="number">1000+</div>
+              <div class="info__text">5 stars reviews
+                from happy clients</div>
+            </div>
+            <div class="command__img">
+              <img src="bi_stars.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="command__video">
+          <img src="command-video.png" alt="">
+        </div>
       </div>
-      <div class="service">
-        <h3>Маркетинговые решения</h3>
-        <p>Создание маркетинговых кампаний и стратегий для увеличения продаж и привлечения клиентов.</p>
+
+    </section>
+
+    <section class="offer">
+      <div class="container">
+        <div class="wrapper">
+          <div class="offer__img">
+            <img src="Rectangle 38.png" alt="">
+          </div>
+
+          <div class="offer__info">
+            <div class="offer__title">WHAT WE ARE
+              OFFER</div>
+            <div class="offer__list">
+              <div class="list__item">
+                <div class="img">
+                  <img src="Rectangle 39.png" alt="">
+                </div>
+                <div class="offer__text">
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+              <div class="list__item">
+                <div class="img">
+                  <img src="Rectangle 39.png" alt="">
+                </div>
+                <div class="offer__text">
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+              <div class="list__item">
+                <div class="img">
+                  <img src="Rectangle 39.png" alt="">
+                </div>
+                <div class="offer__text">
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+              <div class="list__item">
+                <div class="img">
+                  <img src="Rectangle 39.png" alt="">
+                </div>
+                <div class="offer__text">
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="project">
+      <div class="container">
+        <!-- Независимый блок Projects -->
+        <div class="projects-block">
 
-  <section id="contact">
+          <!-- Заголовок Projects -->
+          <div class="projects-header">
+            <span class="big-p">P</span>
+            <div class="projects-title">
+              <span class="line"></span>
+              <span class="text">Projects</span>
+            </div>
+          </div>
 
-    <div class="container">
-      <h2>Регистрация</h2>
-      <form id="regForm">
-        <label for=" name">Имя</label>
-        <input type="text" id="name" name="name" required>
+          <!-- Секция с проектом -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="Rectangle 45.png" alt="Project Image">
+            </div>
+            <div class="project-info">
+              <h3>Project #1</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Morbi nulla aliquet nec purus, feugiat.
+              </p>
+              <div class="project-nav">
+                <button class="nav-btn">&lt;</button>
+                <button class="nav-btn">&gt;</button>
+              </div>
+            </div>
+          </div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="password">Пароль</label>
-        <input type="password" id="password" name="password" required>
-
-        <label for="confirm-password">Подтвердите пароль</label>
-        <input type="password" id="confirm-password" name="confirm-password" required>
-
-        <button type="submit">Зарегистрироваться</button>
-      </form>
-      <div class="login-link">
-        Уже есть аккаунт? <a href="#">Войти</a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <h2>Контакты</h2>
-    <div class="about">
-      <p>Телефон: +7 (999) 123-45-67</p>
-      <p>Email: info@consultingpro.com</p>
-      <p>Адрес: г. Бишкек, ул. Примерная, 10</p>
-    </div>
-  </section>
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials__title">Testimonial</div>
+        <div class="testimonials__subtitle">What's clients say about me</div>
+        <img class="t" src="test.png" alt="">
 
-  <footer>
-    <p>&copy; 2025 КонсалтингПро. Все права защищены. <a href="#">Политика конфиденциальности</a></p>
-  </footer>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="stars">
+              ★★★★★
+            </div>
+            <span class="rating-text">5.0 rating</span>
+          </div>
+          <p class="review-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Ornare massa quis mi diam rhoncus eget sagittis, donec.
+            Eu facilisis et eu, augue ut et tellus molestie odio.
+          </p>
+          <div class="quote-icon">❞</div>
+        </div>
+
+        <div class="wrapper">
+          <div class="person__item">
+            <div class="img">
+              <img src="benj.png" alt="">
+            </div>
+            <div class="person__info">
+              <div class="name">Benjamin Bryant</div>
+              <div class="job">VP & CO-Founder</div>
+            </div>
+          </div>
+          <div class="person__item">
+            <div class="img">
+              <img src="benj.png" alt="">
+            </div>
+            <div class="person__info">
+              <div class="name">Benjamin Bryant</div>
+              <div class="job">VP & CO-Founder</div>
+            </div>
+          </div>
+          <div class="person__item">
+            <div class="img">
+              <img src="benj.png" alt="">
+            </div>
+            <div class="person__info">
+              <div class="name">Benjamin Bryant</div>
+              <div class="job">VP & CO-Founder</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="talk">
+      <div class="container">
+        <div class="contact-container">
+          <!-- Левая часть -->
+          <div class="contact-info">
+            <h2>Let's talk!</h2>
+            <p>hate forms? Instead, send us an <a href="#">e-mail.</a></p>
+
+            <div class="info-item">
+              <span class="icon">📞</span>
+              <p>+49 30 901820</p>
+            </div>
+
+            <div class="info-item">
+              <span class="icon">📧</span>
+              <p>custom_email@doamin.com</p>
+            </div>
+
+            <div class="info-item">
+              <span class="icon">📍</span>
+              <p>
+                Herrn <br>
+                Eberhard Wellhausen <br>
+                Wittekindshof <br>
+                Schulstrasse 4 <br>
+                32547 Bad Oyenhausen <br>
+                GERMANY
+              </p>
+            </div>
+          </div>
+
+          <!-- Правая часть -->
+          <div class="contact-form">
+            <form>
+              <label for="name">FULL NAME</label>
+              <input type="text" id="name" placeholder="">
+
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" placeholder="">
+
+              <label for="subject">SUB</label>
+              <input type="text" id="subject" placeholder="">
+
+              <label for="message">MESSAGE</label>
+              <textarea id="message" rows="4"></textarea>
+
+              <button type="submit">Send this message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="wrapper">
+          <div class="footer__logo">
+            <img src="footer-logo.png" alt="">
+          </div>
+          <div class="copyright">© Copyright 2021. by MedAmineCk</div>
+          <div class="term">
+            <a href="#">Terme of Services</a>
+          </div>
+          <div class="privacy">
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="footer_socials">
+            <img src="footer-facebook.png" alt="">
+            <img src="footer-insta.png" alt="">
+            <img src="footer-whatsapp.png" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
 </body>
 
 </html>
