@@ -9,8 +9,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Document</title>
+  <title>Главное</title>
 </head>
 
 <body>
@@ -205,21 +206,55 @@
           </div>
 
           <!-- Секция с проектом -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="assets/img/Rectangle 45.png" alt="Project Image">
-            </div>
-            <div class="project-info">
-              <h3>Project #1</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Morbi nulla aliquet nec purus, feugiat.
-              </p>
-              <div class="project-nav">
-                <button class="nav-btn">&lt;</button>
-                <button class="nav-btn">&gt;</button>
+
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="assets/img/Rectangle 45.png" alt="Project Image">
+                  </div>
+                  <div class="project-info">
+                    <h3>Project #1</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Morbi nulla aliquet nec purus, feugiat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="assets/img/Rectangle 45.png" alt="Project Image">
+                  </div>
+                  <div class="project-info">
+                    <h3>Project #1</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Morbi nulla aliquet nec purus, feugiat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="assets/img/Rectangle 45.png" alt="Project Image">
+                  </div>
+                  <div class="project-info">
+                    <h3>Project #1</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Morbi nulla aliquet nec purus, feugiat.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
 
         </div>
@@ -354,6 +389,9 @@
       </div>
     </footer>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

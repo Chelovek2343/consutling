@@ -10,6 +10,10 @@
     margin: 0 auto;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -173,7 +177,7 @@ header {
 .command {
     margin-top: 150px;
     padding-top: 200px;
-    background-image: url(background-command.png);
+    background-image: url(../img/background-command.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -332,7 +336,7 @@ header {
 
 /* Отзывы */
 .testimonials {
-    background-image: url(Rectangle\ 44.png);
+    background-image: url(../img/Rectangle\ 44.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
