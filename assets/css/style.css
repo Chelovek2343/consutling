@@ -233,6 +233,11 @@ header {
     width: 700px;
 }
 
+.offer__text p{
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
 .list__item {
     display: flex;
     align-items: center;
@@ -411,6 +416,7 @@ header {
 .person__item {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 18px;
     margin-top: 58px;
 }
