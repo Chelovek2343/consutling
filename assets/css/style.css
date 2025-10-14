@@ -14,6 +14,7 @@
 
 body {
     overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -119,7 +120,7 @@ header {
     font-size: 24px;
     color: #fff;
     border-radius: 73px;
-    width: 238px;
+    width: 200px;
     height: 70px;
     background: #3c8aff;
 }
@@ -196,12 +197,14 @@ header {
 }
 
 .command__item {
-    display: flex;
-    align-items: center;
+    text-align: center;
     gap: 24px;
     border: 2px solid #4842ac;
     background: #180afb;
     padding: 42px 35px 36px 22px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     height: 224px;
     margin-bottom: 92px;
 }
@@ -235,7 +238,6 @@ header {
 
 .offer__text p{
     font-size: 20px;
-    font-family: "Montserrat", sans-serif;
 }
 
 .list__item {
