@@ -180,9 +180,10 @@ header {
 .command {
     margin-top: 150px;
     padding-top: 200px;
-    background-image: url(../img/background-command.png);
+    background-image: url(../img/background-command-2.png);
     background-size: cover;
     background-repeat: no-repeat;
+    /* background: #45C654; */
 }
 .command .wrapper {
     gap: 25px;
